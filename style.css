@@ -23,6 +23,10 @@ body {
    margin: 0 auto;
 }
 
+.purple {
+   color: #6415ff;
+}
+
 /* 
 
 NAVBAR ↓
@@ -41,7 +45,7 @@ NAVBAR ↓
 
  .row {
    width: 100%;
-   min-width: 1280px;
+   max-width: 1280px;
    margin: 0 auto;
 
  }
@@ -72,23 +76,11 @@ NAVBAR ↓
     padding-bottom: 2px;
  }
 
- .nav__link--primary {
-   margin: 0;
-   padding: 10px 32px;
-   margin-top: 2px;
-   border-radius: 9999px;
-   background: #6415ff;
-   color: #fff;
-   line-height: 1.5;
-   border: none;
-   width: auto;
-   transition: all 300ms;
- }
+ 
 
  .nav__link {
     font-size: 14px; 
     font-weight: 600;
-    padding-top: 4px;
     letter-spacing:0.35px;
     border-bottom: 2px solid transparent;
     position: relative;
@@ -99,6 +91,18 @@ NAVBAR ↓
  .nav__link {
    margin: 0 24px;
  }
+
+ .nav__link--primary {
+   padding: 10px 32px;
+   margin-top: 2px;
+   border-radius: 9999px;
+   background: #6415ff;
+   color: #fff;
+   line-height: 1.5;
+   border: none;
+   width: auto;
+   transition: all 300ms;
+ }
  
  .nav__link--login {
    margin-left: 48px;
@@ -106,11 +110,96 @@ NAVBAR ↓
    font-weight: 600;
  }
 
-
-
  a {
  display: inline;
  text-decoration: none;
  }
 
  
+/* 
+
+HEADER / ABOUT US ↓
+
+*/
+
+header .row {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header__description {
+   width: 41.6667%;
+}
+
+h1 {
+   font-size: 48px;
+   color: #1a202c;
+   line-height: 1.25;
+}
+
+.header__description--para {
+   margin: 32px 0;
+}
+
+.header__email {
+width: 100%;
+max-width: 448px;
+height: 68px;
+position: relative;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+.header__email--input {
+   width: 100%;
+   border-radius: 500px;
+   border: 2px solid rgb(229, 231, 235);
+   padding: 20px 192px 20px 32px ;
+   color: rgb(36, 62, 99);
+   font-size: 16px;
+   font-weight: 500;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   z-index: 1;
+   transition: border-color 300ms;
+}
+
+.header__email--btn {
+   z-index: 2;
+   margin: 8px;
+   height: calc(100%-16px);
+   border-radius: 500px;
+   width: 160px;
+   border: none;
+   background-color: #6415ff;
+   color: #fff;
+   font-weight: 700;
+   font-size: 16px;
+   transition: all 300ms;
+}
+
+.header__customers--title {
+   margin-top: 80px;
+   color: #a0aec0;
+   font-size: 12px;
+   font-weight: 700;
+   letter-spacing: 0.6px;
+}
+
+.header__customers {
+   margin-top: 16px;
+   padding-right: 128px;
+   opacity: 0.5;
+}
+
+.header__img--wrapper {
+   width: calc(100%-41.6667%);
+}
+
+.header__img {
+   width: 100%;
+   max-width: 768px;
+}
