@@ -17,6 +17,8 @@ body {
     padding: 0 32px;
  }
 
+ 
+
  .row {
    width: 100%;
    max-width: 1280px;
@@ -122,6 +124,11 @@ HEADER / ABOUT US ↓
 
 */
 
+header {
+   position: relative;
+   padding-top: 50px;
+}
+
 header .row {
    display: flex;
    align-items: center;
@@ -140,6 +147,7 @@ h1 {
 
 .header__description--para {
    margin: 32px 0;
+   font-size: 18px;
 }
 
 .header__email {
@@ -170,7 +178,7 @@ align-items: center;
 .header__email--btn {
    z-index: 2;
    margin: 8px;
-   height: calc(100%-16px);
+   height: calc(100% - 16px);
    border-radius: 500px;
    width: 160px;
    border: none;
@@ -195,11 +203,27 @@ align-items: center;
    opacity: 0.5;
 }
 
+img {
+   width: 100%;
+}
+
+
 .header__img--wrapper {
    width: calc(100%-41.6667%);
 }
 
+
 .header__img {
    width: 100%;
    max-width: 768px;
+}
+
+.header__blob {
+   position: absolute;
+   left: 0;
+   bottom:0;
+   opacity: 0.05;
+   width: 256px;
+   height: 256px;
+   transform: matrix(1, 0, 0, 1, -163, 0);
 }
