@@ -1195,6 +1195,10 @@ MOBILE RESPONSIVENESS
 
 
 @media(max-width:1024px) {
+   .header__description {
+      width: 41.6667%;
+   }
+   
    .btn__menu {
       display: block;
    }
